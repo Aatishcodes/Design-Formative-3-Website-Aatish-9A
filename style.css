@@ -1,0 +1,327 @@
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f5ecd5;
+}
+
+.landingpage {
+    width: 100vw;
+    height: 76.8vh;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.topofpageimage {
+    width: 100%;
+    height: 80vh;
+    display: block;
+    object-fit: cover;
+    vertical-align: bottom;
+    margin-bottom: 0;
+}
+
+.topofpage {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.quote {
+    padding-top: 0;
+    margin-top: 0;
+}
+
+.text-topleft {
+    font-size: 48px;
+    color: #ebf094;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 45%;
+    left: 1%;
+    transform: translateY(-50%);
+}
+
+.text-topleftunder {
+    font-size: 32px;
+    color: purple;
+    background-color: orange;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 54%;
+    left: 1%;
+    transform: translateY(-50%);
+    max-width: 40%;
+    padding: 6px 10px;
+}
+
+.topnav {
+    position: fixed;
+    width: 100%;
+    background-color: #27323D;
+    overflow: hidden;
+    z-index: 1;
+}
+
+
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+.topnav a.active {
+    background-color: rgb(0, 0, 0, 0);
+    color: white;
+}
+
+.sidebysidestats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.sidebysideimgandtext {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textontopofimage1 {
+    font-size: 20px;
+    color: #626f47;
+    background-color: #f5ecd5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 234.5%;
+    left: 79%;
+    transform: translateY(-50%);
+    max-width: 40%;
+    padding: 6px 10px;
+}
+
+
+.sidebysideimgandtext2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.textontopofimage2 {
+    font-size: 20px;
+    color: #626f47;
+    background-color: #f5ecd5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 391%;
+    left: 76.5%;
+    transform: translateY(-50%);
+    max-width: 40%;
+    padding: 6px 10px;
+}
+
+* {
+    box-sizing: border-box
+}
+
+/* Div of the image carusel */
+.image_carousel {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+
+/* Hide the images by default */
+.theimages {
+    display: none;
+}
+
+
+/* Next aur previous buttons */
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Making the next button sit on the right*/
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Next of the numbers that are shown on the image above  (1/3 etc) */
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+/* Div of the image carusel */
+.image_carousel2 {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+    height: 100%;
+}
+
+/* Hide the images by default */
+.theimages2 {
+    display: none;
+}
+
+
+/* Next aur previous buttons */
+.prev2,
+.next2 {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Making the next button sit on the right*/
+.next2 {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev2:hover,
+.next2:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Caption text */
+.text2 {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Next of the numbers that are shown on the image above  (1/3 etc) */
+.numbertext2 {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot2 {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot2:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.sidebysidenews {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
